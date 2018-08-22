@@ -2,7 +2,7 @@ function branch() {
     (
     set -e
     git checkout master
-    git pull upstream master
+    git pull upstream master --rebase --autostash
     git checkout -b "$1"
     )
 }
