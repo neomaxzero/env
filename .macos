@@ -1,0 +1,7 @@
+# To Install Brew plugin
+xcode-select --install
+
+brew analytics off
+
+# Zsh plugin manager
+curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
