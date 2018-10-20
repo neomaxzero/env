@@ -14,6 +14,7 @@
 ## Language/Frameworks Specifics
 - OCAML and reason.
 - Vetur. Vue 
+- graphql for vscode. GraphQL syntax highlighting.
 
 
 
