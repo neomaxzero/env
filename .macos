@@ -5,3 +5,8 @@ brew analytics off
 
 # Zsh plugin manager
 curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/installer/master/installer.zsh | zsh
+
+# Key trigger speed
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+defaults write -g ApplePressAndHoldEnabled -bool false
