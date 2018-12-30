@@ -10,3 +10,12 @@ curl -sL --proto-redir -all,https https://raw.githubusercontent.com/zplug/instal
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# fish shell
+
+brew install fish
+curl -L https://get.oh-my.fish | fish
+omf install bobthefish 
+git clone https://github.com/powerline/fonts.git
+cd fonts
+./install.sh
