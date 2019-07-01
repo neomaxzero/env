@@ -15,11 +15,9 @@ defaults write -g ApplePressAndHoldEnabled -bool false
 
 brew install fish
 curl -L https://get.oh-my.fish | fish
-omf install bobthefish 
-git clone https://github.com/powerline/fonts.git
-cd fonts
-./install.sh
-set -g theme_powerline_fonts no
+omf install eclm
+# Change color of iterm to 
+## blue: 00ff30
 
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
