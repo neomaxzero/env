@@ -1,6 +1,9 @@
 # To Install Brew plugin
 xcode-select --install
 
+# brew 
+/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
 brew analytics off
 
 # Key trigger speed
@@ -16,6 +19,7 @@ omf install bobthefish
 git clone https://github.com/powerline/fonts.git
 cd fonts
 ./install.sh
+set -g theme_powerline_fonts no
 
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
