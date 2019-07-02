@@ -19,11 +19,13 @@ omf install eclm
 # Change color of iterm to 
 ## blue: 00ff30
 
+
+
 echo /usr/local/bin/fish | sudo tee -a /etc/shells
 chsh -s /usr/local/bin/fish
 curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fish
 fisher add jorgebucaran/fnm
-
+omf install https://github.com/jhillyerd/plugin-git
 
 # neovim
 
