@@ -27,6 +27,10 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 fisher add jorgebucaran/fnm
 omf install https://github.com/jhillyerd/plugin-git
 
-# neovim
+# Check fonts: https://github.com/powerline/fonts
+## Set font: Fira Mono
 
 brew install neovim
+brew install bat
+brew install ncdu
+brew install fzf
