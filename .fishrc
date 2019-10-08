@@ -1,0 +1,1 @@
+alias pl='git pull upstream master --rebase --autostash'
