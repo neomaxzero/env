@@ -20,3 +20,7 @@ end
 function clean_branches -d "git: Clean all your branches not merged to master"
   git branch | grep -v '^*' | xargs git branch -d
 end
+
+thefuck --alias | source
+
+set -gx FZF_DEFAULT_COMMAND 'rg --files --follow --hidden'
