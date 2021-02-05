@@ -27,6 +27,9 @@ curl https://git.io/fisher --create-dirs -sLo ~/.config/fish/functions/fisher.fi
 fisher add jorgebucaran/fnm
 omf install https://github.com/jhillyerd/plugin-git
 
+
+brew install thefuck
+
 # Check fonts: https://github.com/powerline/fonts
 ## Set font: Fira Mono
 
