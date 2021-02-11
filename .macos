@@ -37,3 +37,9 @@ brew install neovim
 brew install bat
 brew install ncdu
 brew install fzf
+brew install ffmpeg
+brew install homebrew/cask
+brew install xquartz
+brew install gifsicle
+
+
