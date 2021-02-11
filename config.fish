@@ -22,7 +22,7 @@ function clean_branches -d "git: Clean all your branches not merged to master"
 end
 
 function gif -d "create a gif from a screen record"
-  ffmpeg -i "$argv" -s 600x400 -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif
+  ffmpeg -i "$argv" -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif
 end
 
 thefuck --alias | source
