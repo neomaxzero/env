@@ -7,6 +7,10 @@ function branch() {
     )
 }
 
+function gif() {
+  ffmpeg -i "$1" -pix_fmt rgb24 -r 20 -f gif - | gifsicle --optimize=3 --delay=3 > out.gif
+}
+
 alias ifactive="ifconfig | pcregrep -M -o '^[^\t:]+:([^\n]|\n\t)*status: active'"
 
 # Show/hide hidden files in Finder
