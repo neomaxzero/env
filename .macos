@@ -41,6 +41,7 @@ brew install ffmpeg
 brew install homebrew/cask
 brew install xquartz
 brew install gifsicle
+brew install the_silver_searcher
 
 
 # Section: NVIM
@@ -50,5 +51,6 @@ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.
 
 mkdir ~/.config/nvim
 touch ~/.config/nvim/init.vim
+
 nvim +PlugInstall
 
