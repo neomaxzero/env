@@ -1,0 +1,105 @@
+3. Configure Vim
+
+   'vim set encoding=UTF-8'
+
+   No need to set explicitly under Neovim: always uses UTF-8 as the default
+   encoding.
+
+See Installation [19] for detailed setup instructions
+
+Use ':help devicons' for further configuration.
+
+===============================================================================
+                                                          devicons-developers
+Developers
+
+See DEVELOPER [20] for how to use the API.
+
+===============================================================================
+                                                     devicons-troubleshooting
+Troubleshooting
+
+See FAQ [21].
+
+webdevicons.txt [Help][RO]                        135,0-1        10%
+▸   .bundle/
+▸   .git/
+▸   .github/
+▸   .husky/
+▸   .vscode/
+▸   app/
+▸   bin/
+▸   config/
+▸   db/
+▸   doc/
+▸   kubernetes/
+▸   lib/
+▸   log/
+▸   node_modules/
+▸   public/
+▸   script/
+▸   spec/
+▸   starship_tests/
+▸   terraform/
+▸   tmp/
+▸   travis_scripts/
+▸   vendor/
+    .babelrc
+NERD_tree_1 [RO]                        3,14-11         1%
+Last login: Tue Nov  2 17:43:29 on ttys002
+➜  account git:(feat/FUN-48-add-pricing-page) ✗ cd ..
+➜  component git:(feat/FUN-48-add-pricing-page) ✗ cd ..
+➜  javascript git:(feat/FUN-48-add-pricing-page) ✗ cd ..
+➜  app git:(feat/FUN-48-add-pricing-page) ✗ cd ..
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ nvim .
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ cnvim
+zsh: command not found: cnvim
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ cvim
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ rlnvim
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ nvim .
+➜  frontend git:(feat/FUN-48-add-pricing-page) ✗ clear
+call plug#begin("~/.vim/plugged")
+  " Plugin Section
+  Plug 'dracula/vim'
+  Plug 'scrooloose/nerdtree'
+  Plug 'ryanoasis/vim-devicons'
+call plug#end()
+
+" Config section
+
+set encoding=UTF-8
+
+if (has("termguicolors"))
+ set termguicolors
+endif
+syntax enable
+colorscheme dracula
+
+" Keybindings nerdtree
+let g:NERDTreeShowHidden = 1
+let g:NERDTreeMinimalUI = 1
+let g:NERDTreeIgnore = []
+let g:NERDTreeStatusline = ''
+" Automaticaly close nvim if NERDTree is only thing left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+" Toggle
+nnoremap <silent> <C-b> :NERDTreeToggle<CR>
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~
+~/.config/nvim/init.vim                                                                                                                     2,18           All
